@@ -7,6 +7,8 @@ module.exports = [
         console: 'readonly',
         require: 'readonly',
         module: 'readonly',
+        test: 'readonly',
+        expect: 'readonly',
       },
     },
   },
