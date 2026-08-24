@@ -1,0 +1,14 @@
+{
+  "name": "holbertonschool-continuous-integration",
+  "version": "1.0.0",
+  "description": "Mini app JS",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "lint": "eslint ."
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^9.9.0"
+  }
+}
