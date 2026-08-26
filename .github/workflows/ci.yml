@@ -55,10 +55,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
       - name: Deploy
         env:
           DEPLOY_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
-        run: ./deploy.sh
+        run: |
+          if [ -z "$DEPLOY_TOKEN" ]; then
+            echo "DEPLOY_TOKEN is missing"
+            exit 1
+          fi
+          echo "DEPLOY_TOKEN is set"
