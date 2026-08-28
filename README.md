@@ -34,6 +34,12 @@ https://github.com/tomvieilledent/holbertonschool-continuous_integration/actions
 **With caching** - Time : 19s<br>
 https://github.com/tomvieilledent/holbertonschool-continuous_integration/actions/runs/32828468196
 
+## Task 4 : Secrets and control flow
+
+`deploy` job: `needs: lint` and `if: github.ref == 'refs/heads/main'`, consumes `secrets.DEPLOY_TOKEN` (never printed, never hardcoded).
+
+https://github.com/tomvieilledent/holbertonschool-continuous_integration/actions/runs/32967798988
+
 ## Docker image pipeline (image.yml)
 
 Package: https://github.com/tomvieilledent/holbertonschool-continuous_integration/pkgs/container/holbertonschool-continuous_integration
